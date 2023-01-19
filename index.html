@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <title>Song bird</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="content">
+  <div class="header">
+    <div class="header-holder">
+      <h1><a class="logo" href="index.html">Song bird</a></h1>
+      <nav class="page-navigation">
+        <ul>
+          <li class="active"><a href="index.html">Игра</a></li>
+          <li><a href="rules.html">Правила</a></li>
+          <li><a href="gallery.html">Галлерея</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="start-page">
+    <img class="birds-image" src="assets/images/birds.png" alt="Birds image">
+    <div class="start-page-holder">
+      <p>Нажмите старт и начните приключение. </p>
+      <button class="start-game-button button">Начать игру</button>
+    </div>
+  </div>
+  <div class="game-page">
+    <div class="game-page-holder">
+      <div class="score">Счет: <span class="js-score">0</span></div>
+      <nav class="navigation">
+        <ul>
+          <li class="active">Разминка</li>
+          <li>Воробиные</li>
+          <li>Лесные птицы</li>
+          <li>Певчие птицы</li>
+          <li>Хищные птицы</li>
+          <li>Морские птицы</li>
+        </ul>
+      </nav>
+      <div class="game-page-box">
+        <section class="js-question-bird bird-unknown">
+          <div><img class="js-question-bird-img" src="assets/images/bird-shadow.jpg" alt="Shadow bird"></div>
+          <div>
+            <p class="js-question-bird-name bird-unknown-title">???</p>
+            <div class="js-question-bird-audio"></div>
+          </div>
+        </section>
+        <section class="bird-section">
+          <div>
+            <ul class="js-birds-list birds-list"></ul>
+            <p class="js-message"></p>
+          </div>
+          <div class="js-bird-information"></div>
+        </section>
+        <button disabled class="js-next-button button-next">Дальше</button>
+      </div>
+    </div>
+  </div>
+  <div class="finish-page">
+    <div class="finish-page-holder">
+      <p class="js-game-score"></p>
+      <button class="new-game-button button">Еще раз</button>
+    </div>
+    <h3>Поздравляем!</h3>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-holder">
+    <a href="https://github.com/maryna-yabluchanska" class="git-link">git</a>
+    <span class="creation-year">©2022</span>
+    <a href="https://rs.school/js/" class="logo-school">Rolling school</a>
+  </div>
+</div>
+</body>
+<script src="script.js" type="module"></script>
+</html>
